@@ -42,7 +42,7 @@ test_dataset:
   batch_size: 1
 
 eval_type: cod
-sam_checkpoint: ./sam_vit_l_0b3195.pth
+sam_checkpoint: ./content/sam_vit_h_4b8939.pth
 data_norm:
   inp:
     sub:
