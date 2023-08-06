@@ -2,8 +2,8 @@ train_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: ./content/drive/MyDrive/dataset/camo/train/image
-      root_path_2: ./content/drive/MyDrive/dataset/camo/train/train_gt
+      root_path_1: /content/drive/MyDrive/dataset-adapter/train/image
+      root_path_2: /content/drive/MyDrive/dataset-adapter/train/annot
       cache: none
       split_key: train
   wrapper:
@@ -17,8 +17,8 @@ val_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: ./content/drive/MyDrive/dataset/camo/val/image
-      root_path_2: ./content/drive/MyDrive/dataset/camo/val/gt
+      root_path_1: /content/drive/MyDrive/dataset-adapter/val/image
+      root_path_2: /content/drive/MyDrive/dataset-adapter/val/annot
       cache: none
       split_key: test
   wrapper:
@@ -31,8 +31,8 @@ test_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: ./content/drive/MyDrive/dataset/camo/tes/image
-      root_path_2: ./content/drive/MyDrive/dataset/camo/tes/gt
+      root_path_1: /content/drive/MyDrive/dataset-adapter/test/image
+      root_path_2: /content/drive/MyDrive/dataset-adapter/test/annot
       cache: none
       split_key: test
   wrapper:
@@ -42,7 +42,7 @@ test_dataset:
   batch_size: 1
 
 eval_type: cod
-sam_checkpoint: ./content/sam_vit_h_4b8939.pth
+sam_checkpoint: /content/drive/MyDrive/sam_cp/sam_vit_h_4b8939.pth
 data_norm:
   inp:
     sub:
